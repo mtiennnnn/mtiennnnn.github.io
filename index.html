@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Chúc mừng sinh nhật Phát Lê</title>
-  <style>
-    body {
-      background-image: url('./582051365_1481150489606761_393796430790746757_n.jpg'); 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      min-height: 100vh;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', Arial, sans-serif;
-    }
-    .glass-box {
-      background: rgba(30, 30, 40, 0.6);
-      box-shadow: 0 8px 32px rgba(20,20,20,0.4);
-      border-radius: 24px;
-      padding: 36px 28px;
-      max-width: 440px;
-      width: 90%;
-      color: #fff;
-      backdrop-filter: blur(6px);
-      /* border: 1px solid rgba(255,255,255,0.05); */
-    }
-    h1 {
-      text-align: center;
-      color: #ffd700;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 7px #333;
-      font-size: 2.2em;
-      letter-spacing: 1px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 1.1em;
-    }
-    ul li {
-      margin-bottom: 12px;
-      padding-left: 18px;
-      position: relative;
-      line-height: 1.42;
-    }
-    ul li::before {
-      content: "🌟";
-      position: absolute;
-      left: 0;
-      top: 0;
-      font-size: 1em;
-    }
-    .footer {
-      margin-top: 18px;
-      font-size: 0.99em;
-      text-align: right;
-      color: #d4ecff;
-      font-style: italic;
-      opacity: 0.85;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật Phát Lê - The Vibe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+           
+            --dark-red: #8b0000; 
+            --red-accent: #cc0000;
+            --gold-accent: #ffd700;
+            --text-color: #f0f0f0;
+            --box-background: rgba(10, 10, 10, 0.7); 
+        }
+
+        body {
+            background-image: url('./582051365_1481150489606761_393796430790746757_n.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 20%; /* Điều chỉnh ảnh nếu cần */
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif; 
+            color: var(--text-color);
+        }
+
+        .glass-box {
+            background: var(--box-background);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 15px var(--red-accent); 
+            border-radius: 18px;
+            padding: 40px 30px;
+            max-width: 480px;
+            width: 90%;
+            backdrop-filter: blur(4px); /
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--gold-accent); 
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            
+            text-shadow: 0 0 8px var(--red-accent), 0 0 12px rgba(255, 215, 0, 0.3);
+            border-bottom: 2px solid var(--red-accent);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.05em;
+            font-weight: 400;
+        }
+
+        ul li {
+            margin-bottom: 14px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.5;
+            transition: color 0.3s ease;
+        }
+        
+        ul li:hover {
+            color: var(--gold-accent);
+        }
+
+        ul li::before {
+            content: "🍾"; 
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 1em;
+            text-align: right;
+            color: var(--gold-accent);
+            font-style: italic;
+            opacity: 0.9;
+            border-top: 1px dashed rgba(255, 255, 255, 0.2);
+            padding-top: 15px;
+        }
+        
+   
+        @media (max-width: 600px) {
+            .glass-box {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="glass-box">
-    <h1>Chúc mừng sinh nhật Phát Lê</h1>
-    <ul>
-      <li>Chúc mày tuổi mới nhiều sức khỏe, làm gì cũng thuận lợi.</li>
-      <li>Hy vọng những kế hoạch mày đang theo đuổi sẽ tiến triển đúng ý.</li>
-      <li>Tiền bạc vào đều, công việc ổn định, áp lực ít lại.</li>
-      <li>Gặp đúng người, đúng thời điểm, và đúng cơ hội.</li>
-      <li>Năm nay cố giữ tinh thần thoải mái, đừng ôm việc quá nhiều.</li>
-      <li>Luôn bình tĩnh, sáng suốt khi cần quyết định chuyện lớn.</li>
-      <li>Có khó khăn cũng vượt qua gọn nhẹ, không drama.</li>
-      <li>Cảm ơn vì đã giúp đỡ mọi người xung quanh.</li>
-      <li>Tuổi mới mở ra thêm nhiều thứ hay ho và đáng nhớ!</li>
-    </ul>
-    <div class="footer">— Từ bạn bè và mọi người thân yêu 🎂</div>
-  </div>
+    <div class="glass-box">
+        <h1>Chúc mừng sinh nhật Phát Lê</h1>
+        <ul>
+            <li>Chúc **tuổi mới** nhiều sức khỏe, làm gì cũng thuận lợi.</li>
+            <li>Hy vọng những kế hoạch mày đang theo đuổi sẽ **tiến triển đúng ý**.</li>
+            <li>**Tiền bạc vào đều**, công việc ổn định, áp lực ít lại.</li>
+            <li>Gặp đúng người, đúng thời điểm, và **đúng cơ hội** vàng.</li>
+            <li>Năm nay cố giữ **tinh thần thoải mái**, đừng ôm việc quá nhiều.</li>
+            <li>Luôn **bình tĩnh, sáng suốt** khi cần quyết định chuyện lớn.</li>
+            <li>Có khó khăn cũng vượt qua gọn nhẹ, **không drama**.</li>
+            <li>Cảm ơn vì đã giúp đỡ mọi người xung quanh **hết mình**.</li>
+            <li>Tuổi mới mở ra thêm nhiều thứ **hay ho và đáng nhớ**!</li>
+        </ul>
+        <div class="footer">— Từ bạn bè và mọi người thân yêu **🎂**</div>
+    </div>
 </body>
 </html>
